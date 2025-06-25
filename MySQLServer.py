@@ -8,7 +8,7 @@ except:
     print("Error while connecting")
 
 my_cursor = my_db.cursor()
-my_cursor.execute("create database if not exists alx_book_store")
+my_cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 print("Database 'alx_book_store' created successfully!")
 my_cursor.execute("show databases")
 for i in my_cursor:
