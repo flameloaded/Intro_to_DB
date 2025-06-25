@@ -3,12 +3,12 @@ USE alx_book_store;
 CREATE TABLE book(
 book_id INT PRIMARY KEY,
 title VARCHAR(130),
-author_id INT REFERENCES author(author_id),
+author_id INT REFERENCES Authors(author_id),
 price DOUBLE,
 publication_date DATE
 );
 
-CREATE TABLE author(
+CREATE TABLE Authors(
 author_id INT PRIMARY KEY,
 author_name VARCHAR(215)
 );
