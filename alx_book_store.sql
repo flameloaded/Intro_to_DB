@@ -29,7 +29,7 @@ FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
 order_date DATE 
 );
 
-CREATE TABLE Order_details(
+CREATE TABLE Order_Details(
 orderdetailid INT PRIMARY KEY,
 order_id INT,
 book_id INT,
@@ -39,3 +39,4 @@ quantity DOUBLE
 );
 
 drop database alx_book_store;
+drop table Order_details;
