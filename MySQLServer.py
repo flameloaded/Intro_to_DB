@@ -4,7 +4,7 @@ try:
     my_db = mysql.connector.connect(host="localhost",
     user="root",
     password="4578")
-except:
+except mysql.connector.Error:
     print("Error while connecting")
 
 my_cursor = my_db.cursor()
